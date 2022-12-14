@@ -259,7 +259,7 @@ const withTmInitializer = (modules = [], options = {}) => {
         }
 
         // Make hot reloading work!
-        // FIXME: not working on Wepback 5
+        // FIXME: not working on Webpack 5
         // https://github.com/vercel/next.js/issues/13039
         config.watchOptions.ignored = [
           ...config.watchOptions.ignored.filter((pattern) => pattern !== '**/node_modules/**'),
